@@ -1,0 +1,78 @@
+{% extends 'Navbar.html' %}
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome Page</title>
+    <link href="//netdna.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f4f4f4;
+            padding-top: 40px;
+        }
+        h1, p, .card-text {
+            font-family: 'Roboto', sans-serif;
+        }
+    </style>
+</head>
+{% block body %}
+<div class="container">
+    <div class="row">
+        <div align="center" class="col">
+            <br>
+            <br>
+            <br><br>
+            <br><br><br><br>
+            <img src="{% static 'images/traveltour.jpg' %}" alt="My image" width="200" height="200"/>
+            <br> <br>
+            <h1>Welcome to VEDA'S Travel Tourism and Management</h1>
+        </div>
+        <div align="center" class="col">
+            <h1>Top Vacation Destinations</h1>
+            <br><br>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <a href="https://www.hyderabadtourism.in/" target="_blank" rel="noopener noreferrer">
+                        <div class="card border-primary border-4">
+                            <img src="{% static 'images/hyderabad.jpg' %}" class="card-img-top" alt="Bangalore">
+                            <div class="card-body">
+                                <p class="card-text">Hyderabad</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <a href="https://goa-tourism.com/" target="_blank" rel="noopener noreferrer">
+                        <div class="card border-primary border-4">
+                            <img src="{% static 'images/goa.jpg' %}" class="card-img-top" alt="Kerala">
+                            <div class="card-body">
+                                <p class="card-text">Goa</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <a href="https://chennaitourism.travel/places-to-visit-in-chennai" target="_blank" rel="noopener noreferrer">
+                        <div class="card border-primary border-4">
+                            <img src="{% static 'images/chennai.jpg' %}" class="card-img-top" alt="Goa">
+                            <div class="card-body">
+                                <p class="card-text">Chennai</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<br><br><br>
+<center>
+    <div class="d-grid gap-2 col-6 mx-auto">
+        <button type="button" class="btn btn-primary btn-lg">Explore More Travel Packages</button>
+    </div>
+</center>
+<br><br><br><br><br><br>
+{% endblock %}
+</html>
